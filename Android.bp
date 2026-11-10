@@ -13416,32 +13416,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvmmem",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvmmem.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libwfdcodecv4l2_proprietary",
     owner: "xiaomi",
     strip: {
@@ -18181,7 +18155,6 @@ cc_prebuilt_library_shared {
                 "libjpeg",
                 "libpiex",
                 "libpng",
-                "libheif",
                 "libnativewindow",
                 "libEGL",
                 "libGLESv2",
@@ -18352,6 +18325,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libgui",
+                "libgui_shim",
                 "libui",
                 "libwfdcommonutils",
                 "libwfdconfigutils",
@@ -18360,6 +18334,7 @@ cc_prebuilt_library_shared {
                 "libwfddisplayconfig",
                 "libmedia_helper",
                 "libaudioclient",
+                "libaudiobase",
                 "libwfdavenhancements",
                 "libhidlbase",
                 "libgralloctypes",
@@ -18476,9 +18451,10 @@ cc_prebuilt_library_shared {
                 "libwfdmminterface",
                 "libmedia_helper",
                 "libaudioclient",
+                "libaudiobase",
                 "libaudiofoundation",
                 "audioclient-types-aidl-cpp",
-                "android.media.audio.common.types-V4-cpp",
+                "android.media.audio.common.types-V5-cpp",
                 "libwfdmmsrc_system",
                 "libwfdavenhancements",
                 "libhidlbase",

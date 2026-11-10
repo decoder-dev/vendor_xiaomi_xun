@@ -815,7 +815,6 @@ PRODUCT_PACKAGES += \
     libvendor.xiaomi.hardware.displayfeature@1.0 \
     libvideotxr \
     libvideoutils \
-    libvmmem \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
